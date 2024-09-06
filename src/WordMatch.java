@@ -3,6 +3,12 @@ public class WordMatch {
     public WordMatch(String word) {
         this.word = word;
     }
+    public String getWord() {
+        return word;
+    }
+    public void setWord(String word) {
+        this.word = word;
+    }
     public int scoreGuess(String guess) {
         if (guess.length() > word.length()) {
             throw new IllegalArgumentException("Your guess cannot exceed the number of characters in the Secret word");
